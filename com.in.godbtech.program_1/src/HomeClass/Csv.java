@@ -56,6 +56,7 @@ public class Csv {
 				long end = System.currentTimeMillis();
 
 				System.out.printf("Import done in %d ms\n", +end);
+				System.out.printf("Data Inserted sccuessfully---");
 				connection.rollback();
 				connection.close();
 			} catch (Exception e1) {

@@ -20,7 +20,7 @@ public class Xml {
 			DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
 			Document doc = docBuilder.parse(new File("C:\\Users\\Dinesh V\\Desktop\\roseindia.xml"));
 			doc.getDocumentElement().normalize();
-			System.out.println("Root element of the doc is " + doc.getDocumentElement().getNodeName());
+			System.out.println("File Name is --> " + doc.getDocumentElement().getNodeName());
 			NodeList listOfPersons = doc.getElementsByTagName("employee");
 			for (int s = 0; s < listOfPersons.getLength(); s++) {
 				Node firstPersonNode = listOfPersons.item(s);
